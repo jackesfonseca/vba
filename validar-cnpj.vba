@@ -1,4 +1,4 @@
-Public Function VerificarCNPJ(sCNPJ As String) As Boolean
+Public Function verificaCNPJ(sCNPJ As String) As Boolean
     Dim d1 As Integer
     Dim d2 As Integer
     Dim d3 As Integer
@@ -24,7 +24,7 @@ Public Function VerificarCNPJ(sCNPJ As String) As Boolean
     UltDig = Len(sCNPJ)
     'Sai da função caso a célula esteja vazia
     If sCNPJ = "00000000000000" Then
-        VerificarCNPJ = ""
+        verificaCNPJ = ""
         Exit Function
     End If
     'Pega cada dígito do CNPJ informado e
@@ -58,8 +58,8 @@ Public Function VerificarCNPJ(sCNPJ As String) As Boolean
     End If
     '---------- Fazendo a comparação dos dvs informados -------
     If d13 = DV1 And d14 = DV2 Then
-        VerificarCNPJ = True
+        verificaCNPJ = True
     Else
-        VerificarCNPJ = False
+        verificaCNPJ = False
     End If
 End Function
