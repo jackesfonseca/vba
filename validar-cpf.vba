@@ -1,4 +1,4 @@
-Public Function lfValidaCPF(ByVal lNumCPF As String) As Boolean
+Public Function verificaCPF(ByVal lNumCPF As String) As Boolean
     Application.Volatile
     
     Dim lMultiplicador  As Integer
@@ -41,8 +41,8 @@ Public Function lfValidaCPF(ByVal lNumCPF As String) As Boolean
     
     'Realiza a validação e retorna na função
     If Right(lNumCPF, 2) = CStr(lDv1) & CStr(lDv2) Then
-        lfValidaCPF = True
+        verificaCPF = True
     Else
-        lfValidaCPF = False
+        verificaCPF = False
     End If
 End Function
