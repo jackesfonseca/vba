@@ -7,7 +7,7 @@ Sub ListFiles()
     
     Set oFSO = CreateObject("Scripting.FileSystemObject")
     
-    Set oFolder = oFSO.GetFolder("C:\Users\B497834\OneDrive - IBERDROLA S.A\ARQUIVOS_REF")
+    Set oFolder = oFSO.GetFolder("C:\Users\test")
     
     For Each objFile In oFolder.Files
         Cells(i + 1, 1) = objFile.Name
