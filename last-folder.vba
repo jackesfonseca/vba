@@ -9,7 +9,7 @@ Function LastFolder() As String
     
     Set oFSO = CreateObject("Scripting.FileSystemObject")
     
-    Set oFolder = oFSO.GetFolder("C:\Users\B497834\OneDrive - IBERDROLA S.A\ARQUIVOS_REF")
+    Set oFolder = oFSO.GetFolder("C:\Users\test")
     
     For Each objSubFolder In oFolder.subfolders
         If Left(objSubFolder.Name, 9) = "RELATORIO" And Len(objSubFolder.Name) = 25 Then
